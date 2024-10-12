@@ -1,0 +1,8 @@
+# Package directory
+node_modules
+
+# Dependency file
+pnpm-lock.yaml
+
+# Environment file
+.env

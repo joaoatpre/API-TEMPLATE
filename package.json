@@ -1,0 +1,29 @@
+{
+  "name": "api-template",
+  "version": "0.0.1",
+  "main": "src/server.ts",
+  "scripts": {
+    "start:prod": "cross-env NODE_ENV=production ts-node -r tsconfig-paths/register src/server.ts",
+    "start:dev": "cross-env NODE_ENV=development ts-node-dev -r tsconfig-paths/register src/server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^5.0.0",
+    "@types/express-rate-limit": "^6.0.0",
+    "@types/helmet": "^4.0.0",
+    "@types/node": "^22.7.5",
+    "cross-env": "^7.0.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.2"
+  }
+}
