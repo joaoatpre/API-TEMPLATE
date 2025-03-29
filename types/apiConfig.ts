@@ -8,7 +8,7 @@ export type apiConfigType = {
       origin: string; // Origin for CORS;
     };
     rateLimit: {
-      windowMs: number; // Time window for rate limiting;
+      windowMs: number; // Time window for rate limiting (in milliseconds);
       max: number; // Maximum number of requests in the time window;
     };
   };

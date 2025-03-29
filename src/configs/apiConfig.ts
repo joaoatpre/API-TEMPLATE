@@ -6,8 +6,8 @@ dotenv.config();
 const DEFAULT_ENVIRONMENT = "development"; // Default environment
 const DEFAULT_PORT = 8080; // Default port
 const DEFAULT_CORS_ORIGIN = "*"; // Allow all origins
-const DEFAULT_RATE_LIMIT_WINDOW_MS = 1 * 60 * 1000; // 1 minute
-const DEFAULT_RATE_LIMIT_MAX = 100; // 100 requests
+const DEFAULT_RATE_LIMIT_WINDOW_MS = 60000; // 1 minute
+const DEFAULT_RATE_LIMIT_MAX = 1000; // 1000 requests
 
 export const apiConfig: apiConfigType = {
   project: {
@@ -20,7 +20,7 @@ export const apiConfig: apiConfigType = {
     },
     rateLimit: {
       windowMs:
-        Number(process.env.RATE_LIMIT_WINDOW_MS) * 60 * 1000 ||
+        Number(process.env.RATE_LIMIT_WINDOW_MS) ||
         DEFAULT_RATE_LIMIT_WINDOW_MS,
       max: Number(process.env.RATE_LIMIT_MAX) || DEFAULT_RATE_LIMIT_MAX,
     },
