@@ -19,7 +19,7 @@
     "@types/express": "^5.0.1",
     "@types/express-rate-limit": "^6.0.2",
     "@types/helmet": "^4.0.0",
-    "@types/node": "^22.13.14",
+    "@types/node": "^22.13.17",
     "cross-env": "^7.0.3",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
